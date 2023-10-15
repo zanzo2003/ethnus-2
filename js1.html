@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <button type="button" onclick="reverse()">submit</button>
+    <h3>The reverse is :<span id="result"></span></h3>
+    <script>
+
+        function reverse() {
+            var number = document.querySelector("#input").value;
+            var len = number.length;
+            var ans = "";
+            for (let i = len - 1; i >= 0; i--) {
+                ans += number[i];
+            }
+            document.getElementById("result").innerHTML = ans;
+        }
+    </script>
+
+</body>
+
+</html>
